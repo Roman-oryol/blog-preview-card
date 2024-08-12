@@ -26,7 +26,7 @@ function BlogPreviewCard({ content }) {
         <Description>{content.description}</Description>
       </Content>
       <Autor>
-        <UserPic src={content.autor.userPic} />
+        <UserPic src={content.autor.userPic} alt="avatar" />
         <Name>{content.autor.name}</Name>
       </Autor>
     </Article>

@@ -21,7 +21,9 @@ const BlogImage = styled.figure`
   margin-bottom: ${({ theme }) => theme.spacing200};
 `;
 
-const Img = styled.img`
+const Img = styled.img.attrs(({ alt }) => ({
+  alt: alt,
+}))`
   display: block;
   width: 100%;
   object-fit: cover;
@@ -85,8 +87,9 @@ const Autor = styled.p`
   margin: 0;
 `;
 
-const UserPic = styled.img.attrs(({ src }) => ({
+const UserPic = styled.img.attrs(({ src, alt }) => ({
   src: src,
+  alt: alt,
 }))`
   width: 32px;
   height: 32px;
