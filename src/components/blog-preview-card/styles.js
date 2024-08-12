@@ -67,6 +67,11 @@ const Title = styled.h1`
   @media (${variables.desctop}) {
     font-size: ${({ theme }) => theme.fontSize.textPreset1};
   }
+
+  &:hover {
+    color: ${({ theme }) => theme.color.yellow};
+    cursor: pointer;
+  }
 `;
 
 const Description = styled.p`
